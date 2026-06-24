@@ -165,78 +165,261 @@ email@outlook.com----пароль----clientId----refreshToken
 2. Нажми **"Запустить"** (зелёная кнопка)
 3. Адрес появится: `http://127.0.0.1:5580`
 
-### Подключение к AI-клиентам
+### 🎯 Подключение к AI-клиентам
+
+> Наш API Прокси совместим с любым клиентом который поддерживает OpenAI или Anthropic API.
+
+---
 
 <details>
-<summary><b>🖥 Cursor</b></summary>
+<summary><h4>🟣 Cursor — AI-редактор кода</h4></summary>
+
 <br>
 
-Настройки → Models → Add API:
-```
-API URL: http://127.0.0.1:5580/v1
-API Key: (пусто или свой ключ из настроек)
-Model: claude-sonnet-4.5
-```
+**Что это:** Популярный AI-редактор кода на базе VS Code. Поддерживает Claude, GPT и другие модели.
+
+**Как подключить:**
+
+1. Откройте Cursor → **Settings** (⚙️) → **Models**
+2. Нажмите **"+ Add Model"**
+3. Заполните:
+
+| Поле | Значение |
+|------|----------|
+| **Provider** | OpenAI Compatible |
+| **API Base URL** | `http://127.0.0.1:5580/v1` |
+| **API Key** | `sk-any` (или пусто) |
+| **Model Name** | `claude-sonnet-4.5` |
+
+4. Нажмите **Save**
+5. Выберите эту модель в чате → Готово! ✅
+
+**Доступные модели:**
+- `claude-sonnet-4.5` — баланс скорости и качества
+- `claude-opus-4` — максимальное качество
+- `claude-haiku-4.5` — максимальная скорость
+
+> 💡 Cursor будет использовать ваши аккаунты Kiro через TAJGROUP прокси — полностью бесплатно!
+
 </details>
 
+---
+
 <details>
-<summary><b>🖥 Windsurf</b></summary>
+<summary><h4>🟢 Windsurf — AI IDE</h4></summary>
+
 <br>
 
-Settings → AI Provider → Custom:
-```
-Base URL: http://127.0.0.1:5580/v1
-API Key: (пусто)
-Model: claude-sonnet-4.5
-```
+**Что это:** AI-редактор от Codeium. Поддерживает кастомные AI провайдеры.
+
+**Как подключить:**
+
+1. Откройте Windsurf → **Settings** → **AI Provider**
+2. Выберите **"Custom / OpenAI Compatible"**
+3. Заполните:
+
+| Поле | Значение |
+|------|----------|
+| **Base URL** | `http://127.0.0.1:5580/v1` |
+| **API Key** | `any` |
+| **Model** | `claude-sonnet-4.5` |
+
+4. Сохраните → Готово! ✅
+
+> 💡 Все запросы Windsurf будут идти через ротацию ваших аккаунтов.
+
 </details>
 
+---
+
 <details>
-<summary><b>🖥 Claude Code (терминал)</b></summary>
+<summary><h4>⚫ Claude Code — CLI</h4></summary>
+
 <br>
+
+**Что это:** Официальный терминальный клиент Claude от Anthropic. Работает в командной строке.
+
+**Как подключить:**
+
+Откройте терминал (PowerShell / CMD / bash):
 
 ```bash
+# Windows (PowerShell):
+$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:5580"
+claude
+
+# Linux / macOS:
 export ANTHROPIC_BASE_URL=http://127.0.0.1:5580
 claude
 ```
+
+**Или добавьте в переменные окружения навсегда:**
+
+Windows: Система → Переменные среды → Добавить:
+```
+ANTHROPIC_BASE_URL = http://127.0.0.1:5580
+```
+
+Теперь `claude` в терминале всегда будет использовать TAJGROUP прокси.
+
+> 💡 Поддерживает все функции: чат, /tool, создание файлов, git и другое.
+
 </details>
 
+---
+
 <details>
-<summary><b>🖥 Continue (VS Code)</b></summary>
+<summary><h4>🔵 Continue (VS Code / JetBrains)</h4></summary>
+
 <br>
 
-В `config.json`:
+**Что это:** Открытое AI-расширение для VS Code и JetBrains (IntelliJ, PyCharm и др.)
+
+**Как подключить:**
+
+1. Установите расширение **Continue** в VS Code
+2. Откройте файл конфигурации: `~/.continue/config.json`
+3. Добавьте модель:
+
 ```json
 {
-  "models": [{
-    "title": "Kiro via TAJGROUP",
-    "provider": "openai",
-    "model": "claude-sonnet-4.5",
-    "apiBase": "http://127.0.0.1:5580/v1",
-    "apiKey": "any"
-  }]
+  "models": [
+    {
+      "title": "Kiro AI (TAJGROUP)",
+      "provider": "openai",
+      "model": "claude-sonnet-4.5",
+      "apiBase": "http://127.0.0.1:5580/v1",
+      "apiKey": "tajgroup"
+    }
+  ]
 }
 ```
+
+4. Перезапустите VS Code
+5. Выберите **"Kiro AI (TAJGROUP)"** в панели Continue → Готово! ✅
+
+> 💡 Работает для автодополнения, чата и inline-редактирования.
+
 </details>
+
+---
 
 <details>
-<summary><b>🖥 Любой OpenAI-совместимый клиент</b></summary>
+<summary><h4>🟡 Cline / Roo Code (VS Code)</h4></summary>
+
 <br>
 
-```
-Base URL: http://127.0.0.1:5580/v1
-API Key: (любой текст или пусто)
-Model: claude-sonnet-4.5 / claude-haiku-4.5 / claude-opus-4
-```
+**Что это:** AI-агент внутри VS Code. Может создавать файлы, запускать команды, работать с проектом.
+
+**Как подключить:**
+
+1. Установите расширение **Cline** (или Roo Code) в VS Code
+2. Откройте настройки Cline → **API Provider**
+3. Выберите **"OpenAI Compatible"**
+4. Заполните:
+
+| Поле | Значение |
+|------|----------|
+| **Base URL** | `http://127.0.0.1:5580/v1` |
+| **API Key** | `any` |
+| **Model ID** | `claude-sonnet-4.5` |
+
+5. Нажмите **Save** → Готово! ✅
+
+> 💡 Cline будет автономно работать над задачами используя ваши Kiro аккаунты.
+
 </details>
 
-### Доступные модели
+---
 
-| Модель | Описание |
-|--------|----------|
-| `claude-sonnet-4.5` | Быстрая, качественная (рекомендуется) |
-| `claude-haiku-4.5` | Самая быстрая |
-| `claude-opus-4` | Самая умная |
+<details>
+<summary><h4>🟠 OpenCode (терминал)</h4></summary>
+
+<br>
+
+**Что это:** Терминальный AI-помощник. Альтернатива Claude Code.
+
+**Как подключить:**
+
+```bash
+# Создайте файл конфигурации:
+# ~/.opencode/config.json
+
+{
+  "provider": "anthropic",
+  "baseUrl": "http://127.0.0.1:5580",
+  "apiKey": "any",
+  "model": "claude-sonnet-4.5"
+}
+```
+
+Или через переменные:
+```bash
+export ANTHROPIC_BASE_URL=http://127.0.0.1:5580
+export ANTHROPIC_API_KEY=any
+opencode
+```
+
+</details>
+
+---
+
+<details>
+<summary><h4>🔶 Python / Node.js (программный доступ)</h4></summary>
+
+<br>
+
+**Python (openai библиотека):**
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="http://127.0.0.1:5580/v1",
+    api_key="any"
+)
+
+response = client.chat.completions.create(
+    model="claude-sonnet-4.5",
+    messages=[{"role": "user", "content": "Привет!"}]
+)
+
+print(response.choices[0].message.content)
+```
+
+**Node.js:**
+
+```javascript
+const OpenAI = require('openai');
+
+const client = new OpenAI({
+    baseURL: 'http://127.0.0.1:5580/v1',
+    apiKey: 'any'
+});
+
+const response = await client.chat.completions.create({
+    model: 'claude-sonnet-4.5',
+    messages: [{ role: 'user', content: 'Привет!' }]
+});
+
+console.log(response.choices[0].message.content);
+```
+
+> 💡 Работает с любой библиотекой которая поддерживает OpenAI API формат.
+
+</details>
+
+---
+
+### 📊 Доступные модели
+
+| Модель | Скорость | Качество | Описание |
+|--------|:--------:|:--------:|----------|
+| `claude-sonnet-4.5` | ⚡⚡⚡ | ⭐⭐⭐⭐ | **Рекомендуется** — лучший баланс |
+| `claude-haiku-4.5` | ⚡⚡⚡⚡⚡ | ⭐⭐⭐ | Самая быстрая — для простых задач |
+| `claude-opus-4` | ⚡⚡ | ⭐⭐⭐⭐⭐ | Самая умная — для сложных задач |
+
+> 💡 Все модели доступны бесплатно через ваши аккаунты Kiro!
 
 <br>
 
