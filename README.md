@@ -4,7 +4,7 @@
 
 <br><br>
 
-<img src="https://img.shields.io/badge/version-1.0.0-blue?style=flat-square" />
+<img src="https://img.shields.io/badge/version-1.0.1-blue?style=flat-square" />
 <img src="https://img.shields.io/badge/platform-Windows_x64-0078D6?style=flat-square&logo=windows" />
 <img src="https://img.shields.io/badge/license-Free-success?style=flat-square" />
 <img src="https://img.shields.io/badge/status-Active-brightgreen?style=flat-square" />
@@ -15,7 +15,7 @@
 
 <br>
 
-[<img src="https://img.shields.io/badge/⬇_СКАЧАТЬ-v1.0.0-5B8CFF?style=for-the-badge" alt="Download" />](https://github.com/Khudoidod-dev/TAJGROUP-Kiro-Manager/releases/latest)
+[<img src="https://img.shields.io/badge/⬇_СКАЧАТЬ-v1.0.1-5B8CFF?style=for-the-badge" alt="Download" />](https://github.com/Khudoidod-dev/TAJGROUP-Kiro-Manager/releases/latest)
 
 <br>
 
@@ -26,6 +26,28 @@
 **🇷🇺 Русский** | [🇬🇧 English](#-english) | [🇹🇯 Тоҷикӣ](#-тоҷикӣ)
 
 </div>
+
+---
+
+<br>
+
+<div align="center">
+
+### 🆕 Что нового в v1.0.1
+
+</div>
+
+| Новинка | Описание |
+|:--|:--|
+| 🩺 **Проверка всех токенов** | Одна кнопка проверяет живость токенов всех аккаунтов и показывает сводку (живые / мёртвые) |
+| 🔍 **Фильтр мёртвых** | Мгновенно показать только нерабочие аккаунты для быстрой чистки, кнопка «Показать все» возвращает список |
+| 🖥 **Синхронизация с Kiro IDE** | Кнопка «Обновить из IDE» — определяет и подсвечивает аккаунт, залогиненный в Kiro IDE прямо сейчас (или импортирует его) |
+| 📧 **PNTR Email сервис** | Новый источник почты для регистрации — настройка прямо в интерфейсе (токен, домен, subdomain), проверка токена в один клик |
+| 👁 **Показать/скрыть токен** | Удобный просмотр скрытых токенов при настройке |
+| 🌐 **Прокси-пул в регистрации** | Ротация IP для каждой задачи регистрации, авто-обход нерабочих прокси |
+| ⚙️ **Умный экспорт JSON** | Перед экспортом аккаунта токен автоматически обновляется — файл всегда рабочий |
+
+<br>
 
 ---
 
@@ -112,7 +134,13 @@ OpenAI и Claude совместимые эндпоинты.
 Статистика, графики, экспорт CSV.
 
 **🚀 Регистрация аккаунтов**
-Автоматическое создание с поддержкой прокси.
+Автосоздание с прокси-пулом и PNTR почтой.
+
+**🩺 Проверка токенов**
+Массовая проверка живости всех аккаунтов.
+
+**🖥 Синхронизация с IDE**
+Определение активного аккаунта Kiro IDE.
 
 </td>
 </tr>
@@ -132,7 +160,7 @@ OpenAI и Claude совместимые эндпоинты.
 #### Шаг 2 — Установите
 
 1. [Скачайте установщик](https://github.com/Khudoidod-dev/TAJGROUP-Kiro-Manager/releases/latest)
-2. Запустите `TAJGROUP-Kiro-Manager-1.0.0-setup.exe`
+2. Запустите `TAJGROUP-Kiro-Manager-1.0.1-setup.exe`
 3. Следуйте инструкциям
 
 #### Шаг 3 — Активируйте
@@ -220,6 +248,12 @@ Dark and light mode with full customization.
 **📊 Analytics**
 Usage statistics, graphs, CSV export.
 
+**🩺 Token Health Check**
+Bulk check all accounts' token validity.
+
+**🖥 IDE Sync**
+Detect the account logged into Kiro IDE.
+
 </td>
 </tr>
 </table>
@@ -287,6 +321,12 @@ Usage statistics, graphs, CSV export.
 
 **📊 Таҳлил**
 Омор, графикҳо, экспорти CSV.
+
+**🩺 Санҷиши токенҳо**
+Санҷиши оммавии зинда будани ҳамаи аккаунтҳо.
+
+**🖥 Ҳамоҳангсозӣ бо IDE**
+Муайян кардани аккаунти фаъоли Kiro IDE.
 
 </td>
 </tr>
