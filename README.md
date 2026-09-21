@@ -19,7 +19,7 @@
 
 <br>
 
-[Канал](https://t.me/tajgroup_official) · [Группа](https://t.me/tajgroup_chat) · [Поддержка](https://t.me/tajgroup_ru) · [Получить ключ](https://t.me/tajgroupkirobot)
+[Канал](https://t.me/tajgroup_official) · [Группа](https://t.me/tajgroup_chat) · [Поддержка](https://t.me/tajgroup_ru) · [Получить ключ](https://t.me/TAJGROUP_License_bot)
 
 <br>
 
@@ -153,7 +153,7 @@ OpenAI и Claude совместимые эндпоинты.
 #### Шаг 1 — Получите ключ (бесплатно)
 
 1. Подпишитесь на [канал](https://t.me/tajgroup_official) и вступите в [группу](https://t.me/tajgroup_chat)
-2. Откройте бота [@tajgroupkirobot](https://t.me/tajgroupkirobot)
+2. Откройте бота [@TAJGROUP_License_bot](https://t.me/TAJGROUP_License_bot)
 3. Нажмите «🔑 Получить ключ»
 4. Скопируйте ключ
 
@@ -189,7 +189,7 @@ OpenAI и Claude совместимые эндпоинты.
 
 <details>
 <summary><b>Как получить ключ?</b></summary>
-<br>Подпишитесь на канал и группу, затем напишите боту @tajgroupkirobot.
+<br>Подпишитесь на канал и группу, затем напишите боту @TAJGROUP_License_bot.
 </details>
 
 <details>
@@ -263,7 +263,7 @@ Detect the account logged into Kiro IDE.
 ### 📥 Installation
 
 1. Subscribe to [Channel](https://t.me/tajgroup_official) and join [Group](https://t.me/tajgroup_chat)
-2. Open bot [@tajgroupkirobot](https://t.me/tajgroupkirobot) → press "🔑 Get Key"
+2. Open bot [@TAJGROUP_License_bot](https://t.me/TAJGROUP_License_bot) → press "🔑 Get Key"
 3. [Download installer](https://github.com/Khudoidod-dev/TAJGROUP-Kiro-Manager/releases/latest)
 4. Install and enter the key → Done! ✨
 
@@ -337,7 +337,7 @@ Detect the account logged into Kiro IDE.
 ### 📥 Насб кардан
 
 1. Ба [канал](https://t.me/tajgroup_official) обуна шавед ва ба [гурӯҳ](https://t.me/tajgroup_chat) дохил шавед
-2. Ботро кушоед [@tajgroupkirobot](https://t.me/tajgroupkirobot) → «🔑 Получить ключ» -ро занед
+2. Ботро кушоед [@TAJGROUP_License_bot](https://t.me/TAJGROUP_License_bot) → «🔑 Получить ключ» -ро занед
 3. [Установщикро зеркашӣ кунед](https://github.com/Khudoidod-dev/TAJGROUP-Kiro-Manager/releases/latest)
 4. Насб кунед ва калидро ворид кунед → Тайёр! ✨
 
@@ -391,7 +391,7 @@ Detect the account logged into Kiro IDE.
 | 📢 **Channel** | [@tajgroup_official](https://t.me/tajgroup_official) |
 | 💬 **Group** | [@tajgroup_chat](https://t.me/tajgroup_chat) |
 | 🛟 **Support** | [@tajgroup_ru](https://t.me/tajgroup_ru) |
-| 🤖 **Bot** | [@tajgroupkirobot](https://t.me/tajgroupkirobot) |
+| 🤖 **Bot** | [@TAJGROUP_License_bot](https://t.me/TAJGROUP_License_bot) |
 
 <br>
 
